@@ -41,7 +41,7 @@ Le fichier doit être placé à la racine du projet (i.e dans le dossier "Instan
 
 ### Prediction 
 
-Le script [prediction_example.py]() permet de tester le modèle sur une image:
+Le script [prediction_example.py]() permet de tester le modèle sur une image. Les poids du modèle sont disponibles [ici](https://drive.google.com/file/d/1sIplFosRIl2tbvaWdoslvmQKFyTLoQcy/view?usp=sharing):
 ```shell
 python prediction_example.py --weights path/to/weights/file --image_path path/to/test/image/file
 ```
