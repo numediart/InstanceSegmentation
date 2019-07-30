@@ -45,7 +45,7 @@ Le script [prediction_example.py]() permet de tester le modèle sur une image:
 ```shell
 python prediction_example.py --weights path/to/weights/file --image_path path/to/test/image/file
 ```
-Si les dimensions de l'image de test ne correspondent pas à celles du dataset Cityscapes, alors, le script modifie la taille de l'image et la sauve sous le nom "testimage"_resized.png.
+Si les dimensions de l'image test ne correspondent pas à celles du dataset Cityscapes (1024x2048), alors, le script modifie la taille de l'image et la sauve sous le nom "testimage"_resized.png.
 La sortie est une image 16-bit avec les différents objets identifiés par le modèle.
 Les valeurs attribuées aux pixels des instances sont de la forme "xxyyy" dans laquelle "xx" correspond à l'identifiant de la classe (selon la logique définie [ici](https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/helpers/labels.py))
 et "yyy" correspond au numéro de l'instance. Par exemple, pour une image contenant deux voitures, les valeurs possibles des pixels dans le masque seront: "26000" et "26001". L'ordre des voitures est choisi arbitrairement.
